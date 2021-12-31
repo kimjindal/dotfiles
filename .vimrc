@@ -1,3 +1,4 @@
+" 깃 닷파일 연습 시작
 set nocompatible
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -306,3 +307,5 @@ map  <Leader>w <Plug>(easymotion-bd-w)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " let g:mucomplete#enable_auto_at_startup = 1
 " let g:mucomplete#completion_delay = 1
+"
+" 깃 닷파일 연습 끝 

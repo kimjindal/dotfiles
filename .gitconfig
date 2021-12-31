@@ -14,4 +14,4 @@
 [commit]
 	template = /Users/apple/.stCommitMsg
 [alias]
-	co = checkout
+	; co = checkout
