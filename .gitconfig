@@ -1,6 +1,7 @@
 [core]
 	excludesfile = /Users/apple/.gitignore_global
-	editor = code --wait
+	; editor = code --wait
+	editor = nvim
 	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -14,4 +15,4 @@
 [commit]
 	template = /Users/apple/.stCommitMsg
 [alias]
-	; co = checkout
+	co = checkout
