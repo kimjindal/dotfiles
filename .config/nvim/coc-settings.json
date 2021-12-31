@@ -1,0 +1,110 @@
+{
+  "diagnostic.errorSign": "✖",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "ℹ",
+  "diagnostic.hintSign": "➤",
+
+  "suggest.noselect": false,
+  "suggest.echodocSupport": true,
+  "suggest.preferCompleteThanJumpPlaceholder": true,
+
+  "codeLens.enable": true,
+  "signature.enable": true,
+
+  "html.suggest.angular1": false,
+  "html.suggest.ionic": false,
+  "html.suggest.html5": true,
+
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact",
+    "vue"
+  ],
+
+  "javascript.format.enabled": false,
+  "javascript.showUnused": false,
+  "javascript.suggestionAction.enabled": false,
+  "javascript.validate.enabled": false,
+
+  "emmet.includeLanguages": {
+    "eruby": "html",
+    "javascript": "javascriptreact"
+  },
+  "emmet.excludeLanguages": ["haml"],
+
+  "prettier.printWidth": 100,
+
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact"
+  ],
+
+  "workspace.workspaceFolderCheckCwd": false,
+  "tsserver.implicitProjectConfig.experimentalDecorators": true,
+
+  "git.addedSign.text": "▎",
+  "git.changedSign.text": "▎",
+  "git.removedSign.text": "▎",
+  "git.changeRemovedSign.text": "▶",
+  "git.topRemovedSign.text": "◥",
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+
+  "explorer.icon.enableNerdfont": true,
+  "explorer.quitOnOpen": true,
+  "explorer.width": 40,
+  "explorer.keyMappings.global": {
+    "<right>": "expand",
+    "<left>": "shrink"
+  },
+
+  "suggest.completionItemKindLabels": {
+    "text": "",
+    "method": "",
+    "function": "",
+    "constructor": "",
+    "field": "ﰠ",
+    "variable": "",
+    "class": "ﴯ",
+    "interface": " ",
+    "module": " ",
+    "property": "ﰠ",
+    "unit": "塞",
+    "value": "",
+    "enum": "",
+    "keyword": "",
+    "snippet": "",
+    "color": "",
+    "file": "",
+    "reference": "",
+    "folder": "",
+    "enumMember": " ",
+    "constant": "",
+    "struct": " ",
+    "event": "",
+    "operator": "",
+    "typeParameter": "<>"
+  },
+
+  // lua-language-server
+  // coc-sumneko-lua
+  "sumneko-lua.enableNvimLuaDev": true,
+  "Lua.completion.callSnippet": "Replace"
+}
+
