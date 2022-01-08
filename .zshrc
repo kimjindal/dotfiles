@@ -1,11 +1,13 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/Developer/flutter/bin"
 export PATH="$PATH:$HOME/nvim-osx64/bin"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:$PATH"
+
+export XDG_CONFIG_HOME="$HOME/.config"
+# export XDG_DATA_HOME="$HOME/.local/share"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/apple/.oh-my-zsh"
@@ -29,8 +31,8 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="dracula"
-# ZSH_THEME="intheloop"
+# ZSH_THEME="dracula"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,7 +103,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -128,11 +129,22 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python=python3
 alias ld='ls -Ap | grep /$'
 alias lf='ls -Ap | grep -v /$'
 alias x='exit'
 alias sz='source ~/.zshrc'
 alias v=nvim
 alias lg='lazygit'
-alias dotfiles='/usr/local/bin/git --git-dir=/Users/apple/.dotfiles --work-tree=/Users/apple'
+alias dotfiles='/usr/bin/git --git-dir=/Users/apple/.dotfiles --work-tree=/Users/apple'
+
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+source /Users/apple/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+POWERLEVEL9K_COLOR_SCHEME='light'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
