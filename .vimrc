@@ -6,32 +6,32 @@ filetype plugin indent on
 " set rtp+=/usr/local/opt/fzf
 " set rtp+=/usr/local/bin/fzf
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'triglav/vim-visual-increment'
-Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-commentary'
-Plug 'kana/vim-textobj-user'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'maksimr/vim-jsbeautify'
-Plug 'tpope/vim-abolish'
-Plug 'godlygeek/tabular'
-Plug 'jiangmiao/auto-pairs'
-Plug 'haya14busa/is.vim'
-Plug 'vim-scripts/AutoComplPop'
-Plug 'morhetz/gruvbox'
-Plug 'jaxbot/semantic-highlight.vim'
-Plug 'michaeljsmith/vim-indent-object'
-Plug 'justinmk/vim-sneak'
-Plug 'mattn/emmet-vim'
-Plug 'alvan/vim-closetag'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'easymotion/vim-easymotion'
-" Plug 'lifepillar/vim-mucomplete'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Plug 'triglav/vim-visual-increment'
+" Plug 'itchyny/lightline.vim'
+" Plug 'tpope/vim-surround'
+" Plug 'scrooloose/nerdtree'
+" Plug 'tpope/vim-commentary'
+" Plug 'kana/vim-textobj-user'
+" Plug 'editorconfig/editorconfig-vim'
+" Plug 'maksimr/vim-jsbeautify'
+" Plug 'tpope/vim-abolish'
+" Plug 'godlygeek/tabular'
+" Plug 'jiangmiao/auto-pairs'
+" Plug 'haya14busa/is.vim'
+" Plug 'vim-scripts/AutoComplPop'
+" Plug 'morhetz/gruvbox'
+" Plug 'jaxbot/semantic-highlight.vim'
+" Plug 'michaeljsmith/vim-indent-object'
+" Plug 'justinmk/vim-sneak'
+" Plug 'mattn/emmet-vim'
+" Plug 'alvan/vim-closetag'
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" Plug 'easymotion/vim-easymotion'
+" " Plug 'lifepillar/vim-mucomplete'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
