@@ -18,11 +18,11 @@ alias ld='ls -Ap | grep /$'
 alias lf='ls -Ap | grep -v /$'
 alias cls=clear
 
-export PATH=/usr/local/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/Developer/flutter/bin"
 export PATH="$PATH:$HOME/nvim-osx64/bin"
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
-. "$HOME/.cargo/env"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
