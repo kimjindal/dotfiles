@@ -17,6 +17,7 @@ alias la='ls -A'
 alias ld='ls -Ap | grep /$'
 alias lf='ls -Ap | grep -v /$'
 alias cls=clear
+alias python='/usr/local/bin/python3.10'
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
