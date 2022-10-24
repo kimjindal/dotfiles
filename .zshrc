@@ -47,7 +47,7 @@ zstyle ':z4h:ssh:*' send-extra-files '~/.nanorc' '~/.env.zsh'
 # This doesn't do anything apart from cloning the repository and keeping it
 # up-to-date. Cloned files can be used after `z4h init`. This is just an
 # example. If you don't plan to use Oh My Zsh, delete this line.
-z4h install ohmyzsh/ohmyzsh || return
+# z4h install ohmyzsh/ohmyzsh || return
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
@@ -107,23 +107,30 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/Developer/flutter/bin"
-export PATH="$PATH:$HOME/nvim-osx64/bin"
+export PATH="$PATH:$HOME/nvim/bin"
 export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
-# export XDG_CONFIG_HOME="$HOME/.config"
-# export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias v='nvim'
 alias lg='lazygit'
+alias mss='sudo /usr/local/mysql/support-files/mysql.server start'
+alias mst='sudo /usr/local/mysql/support-files/mysql.server stop'
+alias msc='/usr/local/mysql/bin/mysql -uroot -p' 
 alias python='/usr/local/bin/python3.10'
 alias dotfiles='/usr/bin/git --git-dir=/Users/apple/.dotfiles --work-tree=/Users/apple'
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
 # Set fzf installation directory path
 export FZF_BASE=/usr/local/bin/fzf
@@ -135,4 +142,3 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
 export FZF_ALT_C_COMMAND='fd --type d . --color=never --hidden'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-

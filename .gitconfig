@@ -16,3 +16,5 @@
 	template = /Users/apple/.stCommitMsg
 [alias]
 	co = checkout
+[init]
+  defaultBranch = main
